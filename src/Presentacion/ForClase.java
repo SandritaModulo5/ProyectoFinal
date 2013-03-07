@@ -167,6 +167,7 @@ public class ForClase extends javax.swing.JDialog {
         rbCProtected = new javax.swing.JRadioButton();
         bGOK = new javax.swing.JButton();
         bGCancelar = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         pAtributo = new javax.swing.JPanel();
         tNAtributo = new javax.swing.JTextField();
         cbTipoAtributo = new javax.swing.JComboBox();
@@ -208,15 +209,15 @@ public class ForClase extends javax.swing.JDialog {
             }
         });
 
-        jLabel1.setText("Nombre:");
+        jLabel1.setText("Nombre:"); // NOI18N
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Modelo"));
 
-        rbInterface.setText("interface");
+        rbInterface.setText("interface"); // NOI18N
 
-        rbAbstract.setText("abstract");
+        rbAbstract.setText("abstract"); // NOI18N
 
-        rbFinal.setText("final");
+        rbFinal.setText("final"); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -242,7 +243,7 @@ public class ForClase extends javax.swing.JDialog {
 
         jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder("Acceso"));
 
-        rbCPrivate.setText("private");
+        rbCPrivate.setText("private"); // NOI18N
         rbCPrivate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rbCPrivateActionPerformed(evt);
@@ -250,9 +251,9 @@ public class ForClase extends javax.swing.JDialog {
         });
 
         rbCPublic.setSelected(true);
-        rbCPublic.setText("public");
+        rbCPublic.setText("public"); // NOI18N
 
-        rbCProtected.setText("protected");
+        rbCProtected.setText("protected"); // NOI18N
         rbCProtected.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rbCProtectedActionPerformed(evt);
@@ -284,7 +285,7 @@ public class ForClase extends javax.swing.JDialog {
         );
 
         bGOK.setMnemonic('O');
-        bGOK.setText("OK");
+        bGOK.setText("OK"); // NOI18N
         bGOK.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bGOKActionPerformed(evt);
@@ -292,10 +293,17 @@ public class ForClase extends javax.swing.JDialog {
         });
 
         bGCancelar.setMnemonic('C');
-        bGCancelar.setText("Cancelar");
+        bGCancelar.setText("Cancelar"); // NOI18N
         bGCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bGCancelarActionPerformed(evt);
+            }
+        });
+
+        jButton1.setLabel("BPrueba");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
             }
         });
 
@@ -313,10 +321,12 @@ public class ForClase extends javax.swing.JDialog {
                     .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(pGeneralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(bGOK, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(bGCancelar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(34, Short.MAX_VALUE))
+                .addGroup(pGeneralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pGeneralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(bGOK, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(bGCancelar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jButton1))
+                .addContainerGap(38, Short.MAX_VALUE))
         );
         pGeneralLayout.setVerticalGroup(
             pGeneralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -338,31 +348,35 @@ public class ForClase extends javax.swing.JDialog {
                         .addGap(21, 21, 21)
                         .addComponent(bGOK)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(bGCancelar)))
-                .addContainerGap(13, Short.MAX_VALUE))
+                        .addComponent(bGCancelar)
+                        .addGap(31, 31, 31)
+                        .addComponent(jButton1)))
+                .addContainerGap(27, Short.MAX_VALUE))
         );
+
+        jButton1.getAccessibleContext().setAccessibleName("BPrueba");
 
         jTabbedPane1.addTab("General", pGeneral);
 
         cbTipoAtributo.setEditable(true);
 
-        jLabel2.setText("Nombre:");
+        jLabel2.setText("Nombre:"); // NOI18N
 
-        jLabel3.setText("Tipo:");
+        jLabel3.setText("Tipo:"); // NOI18N
 
         jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder("Acceso"));
 
         rbAPrivate.setSelected(true);
-        rbAPrivate.setText("private");
+        rbAPrivate.setText("private"); // NOI18N
         rbAPrivate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rbAPrivateActionPerformed(evt);
             }
         });
 
-        rbAPublic.setText("public");
+        rbAPublic.setText("public"); // NOI18N
 
-        rbAProtected.setText("protected");
+        rbAProtected.setText("protected"); // NOI18N
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -386,14 +400,14 @@ public class ForClase extends javax.swing.JDialog {
                 .addComponent(rbAProtected))
         );
 
-        bAOk.setText("OK");
+        bAOk.setText("OK"); // NOI18N
         bAOk.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bAOkActionPerformed(evt);
             }
         });
 
-        bACancelar.setText("Cancelar");
+        bACancelar.setText("Cancelar"); // NOI18N
         bACancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bACancelarActionPerformed(evt);
@@ -404,14 +418,14 @@ public class ForClase extends javax.swing.JDialog {
 
         jScrollPane1.setViewportView(lAtributo);
 
-        bAddAtributo.setText("Adicionar");
+        bAddAtributo.setText("Adicionar"); // NOI18N
         bAddAtributo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bAddAtributoActionPerformed(evt);
             }
         });
 
-        bElimAtributo.setText("Eliminar");
+        bElimAtributo.setText("Eliminar"); // NOI18N
         bElimAtributo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bElimAtributoActionPerformed(evt);
@@ -427,14 +441,14 @@ public class ForClase extends javax.swing.JDialog {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(bElimAtributo, javax.swing.GroupLayout.DEFAULT_SIZE, 77, Short.MAX_VALUE)
+                    .addComponent(bElimAtributo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(bAddAtributo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(18, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel2Layout.createSequentialGroup()
@@ -458,8 +472,8 @@ public class ForClase extends javax.swing.JDialog {
                             .addComponent(jLabel3))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(pAtributoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(cbTipoAtributo, 0, 164, Short.MAX_VALUE)
-                            .addComponent(tNAtributo, javax.swing.GroupLayout.DEFAULT_SIZE, 164, Short.MAX_VALUE))
+                            .addComponent(cbTipoAtributo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(tNAtributo))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -494,15 +508,15 @@ public class ForClase extends javax.swing.JDialog {
 
         jTabbedPane1.addTab("Atributos", pAtributo);
 
-        jLabel4.setText("Nombre:");
+        jLabel4.setText("Nombre:"); // NOI18N
 
-        jLabel5.setText("Retorno:");
+        jLabel5.setText("Retorno:"); // NOI18N
 
         cbRetorno.setEditable(true);
 
         jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder("Acceso"));
 
-        rbMPrivate.setText("private");
+        rbMPrivate.setText("private"); // NOI18N
         rbMPrivate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rbMPrivateActionPerformed(evt);
@@ -510,9 +524,9 @@ public class ForClase extends javax.swing.JDialog {
         });
 
         rbMPublic.setSelected(true);
-        rbMPublic.setText("public");
+        rbMPublic.setText("public"); // NOI18N
 
-        rbMProtected.setText("protected");
+        rbMProtected.setText("protected"); // NOI18N
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -536,14 +550,14 @@ public class ForClase extends javax.swing.JDialog {
                 .addComponent(rbMProtected))
         );
 
-        bMOk.setText("OK");
+        bMOk.setText("OK"); // NOI18N
         bMOk.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bMOkActionPerformed(evt);
             }
         });
 
-        bMCancelar.setText("Cancelar");
+        bMCancelar.setText("Cancelar"); // NOI18N
         bMCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bMCancelarActionPerformed(evt);
@@ -554,14 +568,14 @@ public class ForClase extends javax.swing.JDialog {
 
         jScrollPane2.setViewportView(lMetodo);
 
-        bAddMetodo.setText("Adicionar");
+        bAddMetodo.setText("Adicionar"); // NOI18N
         bAddMetodo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bAddMetodoActionPerformed(evt);
             }
         });
 
-        bElimMetodo.setText("Eliminar");
+        bElimMetodo.setText("Eliminar"); // NOI18N
         bElimMetodo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bElimMetodoActionPerformed(evt);
@@ -577,14 +591,14 @@ public class ForClase extends javax.swing.JDialog {
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(bElimMetodo, javax.swing.GroupLayout.DEFAULT_SIZE, 77, Short.MAX_VALUE)
+                    .addComponent(bElimMetodo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(bAddMetodo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(18, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel3Layout.createSequentialGroup()
@@ -608,8 +622,8 @@ public class ForClase extends javax.swing.JDialog {
                             .addComponent(jLabel5))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(pMetodoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(cbRetorno, 0, 162, Short.MAX_VALUE)
-                            .addComponent(tNMetodo, javax.swing.GroupLayout.DEFAULT_SIZE, 162, Short.MAX_VALUE))
+                            .addComponent(cbRetorno, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(tNMetodo))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -650,7 +664,7 @@ public class ForClase extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 433, Short.MAX_VALUE)
+                .addComponent(jTabbedPane1)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -824,6 +838,10 @@ public class ForClase extends javax.swing.JDialog {
         if( pos<listaM.size() )
             this.listaM.remove( pos );          
     }//GEN-LAST:event_bElimMetodoActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
     
     /**
      * @param args the command line arguments
@@ -856,6 +874,7 @@ public class ForClase extends javax.swing.JDialog {
     private javax.swing.JButton bMOk;
     private javax.swing.JComboBox cbRetorno;
     private javax.swing.JComboBox cbTipoAtributo;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
