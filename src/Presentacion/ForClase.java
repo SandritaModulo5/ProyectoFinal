@@ -168,6 +168,7 @@ public class ForClase extends javax.swing.JDialog {
         bGOK = new javax.swing.JButton();
         bGCancelar = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
         pAtributo = new javax.swing.JPanel();
         tNAtributo = new javax.swing.JTextField();
         cbTipoAtributo = new javax.swing.JComboBox();
@@ -307,6 +308,8 @@ public class ForClase extends javax.swing.JDialog {
             }
         });
 
+        jButton2.setText("Prueba2");
+
         javax.swing.GroupLayout pGeneralLayout = new javax.swing.GroupLayout(pGeneral);
         pGeneral.setLayout(pGeneralLayout);
         pGeneralLayout.setHorizontalGroup(
@@ -320,13 +323,18 @@ public class ForClase extends javax.swing.JDialog {
                 .addGroup(pGeneralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(pGeneralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pGeneralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(bGOK, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(bGCancelar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(jButton1))
-                .addContainerGap(38, Short.MAX_VALUE))
+                    .addGroup(pGeneralLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(pGeneralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(pGeneralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(bGOK, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(bGCancelar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jButton1)))
+                    .addGroup(pGeneralLayout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton2)))
+                .addContainerGap(32, Short.MAX_VALUE))
         );
         pGeneralLayout.setVerticalGroup(
             pGeneralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -350,11 +358,11 @@ public class ForClase extends javax.swing.JDialog {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(bGCancelar)
                         .addGap(31, 31, 31)
-                        .addComponent(jButton1)))
+                        .addComponent(jButton1)
+                        .addGap(33, 33, 33)
+                        .addComponent(jButton2)))
                 .addContainerGap(27, Short.MAX_VALUE))
         );
-
-        jButton1.getAccessibleContext().setAccessibleName("BPrueba");
 
         jTabbedPane1.addTab("General", pGeneral);
 
@@ -875,6 +883,7 @@ public class ForClase extends javax.swing.JDialog {
     private javax.swing.JComboBox cbRetorno;
     private javax.swing.JComboBox cbTipoAtributo;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
